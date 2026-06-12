@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agentic AI Consulting Engine</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="brand" href="#top" aria-label="StratPay home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>StratPay</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#product">Products</a>
+        <a href="#workflow">Customers</a>
+        <a href="#output">Pricing</a>
+        <a href="#strategy">Learn</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="ghost-button" href="#output">Login</a>
+        <a class="solid-button" href="#brief">Sign Up</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="product">
+        <div class="hero-copy">
+          <h1>Get strategic answers early and automate your market moves.</h1>
+          <p>Supports strategy teams with competitor intelligence, AI agent research, opportunity mapping, and boardroom-ready recommendations.</p>
+          <form class="email-cta" id="briefShortcut">
+            <input aria-label="Business email" placeholder="Your business email">
+            <a href="#brief">Get Started <span aria-hidden="true">↗</span></a>
+          </form>
+          <div class="logo-row" aria-label="Example customers">
+            <span>Salesforce.</span>
+            <span>Adobe</span>
+            <span>ServiceNow</span>
+          </div>
+        </div>
+        <div class="hero-mockup">
+          <img src="fintech-visual.png" alt="Fintech-style competitive intelligence dashboard mockup">
+        </div>
+      </section>
+
+      <section class="feature-card" id="workflow">
+        <div class="feature-heading">
+          <p class="eyebrow">Future intelligence</p>
+          <h2>Experience that grows with your scale.</h2>
+        </div>
+        <p class="feature-intro">Design an intelligence operating system that works for your business and streamlines competitive decision-making.</p>
+        <div class="feature-grid">
+          <article>
+            <span class="icon transfer" aria-hidden="true"></span>
+            <h3>Research transfers</h3>
+            <p>Move from website signals and news coverage into structured strategic intelligence without manual synthesis.</p>
+          </article>
+          <article>
+            <span class="icon bank" aria-hidden="true"></span>
+            <h3>Multiple agents</h3>
+            <p>Run positioning, campaign, threat, opportunity, and recommendation agents from one connected brief.</p>
+          </article>
+          <article>
+            <span class="icon shield" aria-hidden="true"></span>
+            <h3>Unmatched clarity</h3>
+            <p>Convert noisy market evidence into concrete actions, expected impact, and client-specific plays.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="brief-section" id="brief">
+        <div class="brief-copy">
+          <p class="eyebrow">Live brief builder</p>
+          <h2>Build a consulting-grade report from a single strategy question.</h2>
+          <p>Change the competitor, client, or angle to preview how the recommendation engine adapts the output.</p>
+        </div>
+        <div class="brief-shell">
+          <form class="brief-card" id="briefForm">
+            <label>
+              Competitor
+              <input id="competitor" name="competitor" value="HubSpot" autocomplete="organization">
+            </label>
+            <label>
+              Client
+              <input id="client" name="client" value="Salesforce" autocomplete="organization">
+            </label>
+            <label>
+              Strategic angle
+              <select id="angle" name="angle">
+                <option>SMB growth and AI positioning</option>
+                <option>Pricing strategy</option>
+                <option>Market entry</option>
+                <option>Brand positioning</option>
+                <option>Digital transformation</option>
+              </select>
+            </label>
+            <button type="button" id="generateBtn">Generate Preview</button>
+          </form>
+          <aside class="report-preview" aria-label="Live report preview">
+            <span>Report ready</span>
+            <h3 id="reportTitle">HubSpot vs Salesforce</h3>
+            <p id="reportAngle">SMB growth and AI positioning</p>
+            <div>
+              <strong>6</strong>
+              <strong>8</strong>
+              <strong>10</strong>
+            </div>
+            <small>Agents · Sections · Strategic moves</small>
+          </aside>
+        </div>
+      </section>
+
+      <section class="dark-band" id="output">
+        <div class="dark-copy">
+          <p class="eyebrow">Output quality</p>
+          <h2>Generate returns with a report that generates decisions.</h2>
+        </div>
+        <div class="output-layout">
+          <div class="report-outline">
+            <button class="outline-item active" data-output="summary">Executive Summary</button>
+            <button class="outline-item" data-output="snapshot">Competitor Snapshot</button>
+            <button class="outline-item" data-output="campaign">Campaign Analysis</button>
+            <button class="outline-item" data-output="threats">Threat Analysis</button>
+            <button class="outline-item" data-output="moves">Recommended Moves</button>
+          </div>
+          <div class="output-card" aria-live="polite">
+            <p class="kicker" id="outputKicker">Executive Summary</p>
+            <h3 id="outputTitle">Partner-level synthesis</h3>
+            <ul id="outputList">
+              <li>Sharp, 5-7 bullet narrative for senior stakeholders.</li>
+              <li>Prioritizes insight over source recitation.</li>
+              <li>Frames what matters, why now, and what the client should do next.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-section">
+        <p class="eyebrow">Our mission</p>
+        <h2>We help innovative teams turn market noise into better moves.</h2>
+        <div class="proof-grid">
+          <div><strong>36%</strong><span>faster brief creation</span></div>
+          <div><strong>180K</strong><span>signals structured</span></div>
+          <div><strong>10+</strong><span>strategy frameworks</span></div>
+        </div>
+      </section>
+
+      <section class="strategy-section" id="strategy">
+        <div class="strategy-copy">
+          <p class="eyebrow">Choose play</p>
+          <h2 id="strategyHeading">Recommended moves for Salesforce</h2>
+        </div>
+        <div class="moves-list" id="movesList"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>StratPay</span>
+      <span>Competitive intelligence that compounds.</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
